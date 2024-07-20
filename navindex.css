@@ -1,0 +1,99 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat.otf);
+}
+/* Font Eksternal */
+
+/* Navbar */
+
+*, html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+.connav {
+    width: 100%;
+    height: 8%;
+    border: 0px solid black;
+    background-color: rgb(242, 231, 231);
+    margin: 0;
+    padding: 2px;
+    position: fixed;
+    z-index: 99;
+}
+
+.hmiflogo1 {
+    width: 5%;
+    height: auto;
+    position: fixed;
+    left: 10%;
+    top: 2%;
+    z-index: 100;
+}
+
+.navtext {
+    font-family: Montserrat;
+    font-size: 70%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 2.4%;
+    left: 45.5%;
+    z-index: 100;
+}
+
+.navtext a, .navtext .dropdown h2 {
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.navtext .dropdown h2 {
+    display: inline-block;
+    margin: 0; 
+}
+
+.thome, .tevent, .talumni {
+    display: inline-block;
+    margin: 0; 
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

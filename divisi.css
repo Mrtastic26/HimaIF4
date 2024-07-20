@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    
+  
+}
+.heading{
+    color: white;
+    font-size : 3rem;
+    text-align: center;
+}
+
+:root {
+    --bg-color: #1b4a92;
+    --second-bg-color: #46484d;
+    --text-color: #ffffff;
+    --main-color: #000000;
+}
+
+html { 
+ 
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}.portofolio {
+    background-color: var(--bg-color);
+}
+
+.portofolio h2 {
+    margin-bottom: 4rem;
+}
+
+.portofolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portofolio-container .portofolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portofolio-box img {
+    width: 35%;
+    transition: .5s ease;
+    justify-content: center;
+    margin: auto;
+    display: block;
+    max-width: 100%; 
+   
+}
+
+.portofolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portofolio-box .portofolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portofolio-box:hover .portofolio-layer{
+    transform: translateY(0);
+}
+
+.portofolio-layer h4 {
+    font-size: 3rem;
+}
+
+.portofolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.portofolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portofolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+.experience {
+    background-color: var(--second-bg-color);
+}
+
+.experience h2 {
+    margin-bottom: 5rem;
+}
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.experience-container .experience-box {
+    flex: 1 1 30rem;
+    background: var(--bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--second-bg-color);
+    transition: .5s ease;
+}
+
+.experience-container .experience-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.experience-box i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.experience-box h3 {
+    font-size: 2.6rem;
+}
+
+.experience-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+.btn {
+    background-color: navy;
+    border: none;
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: rgb(49, 127, 205);
+    transform: scale(1.1); /* Efek zoom saat di-hover */
+}
+

@@ -1,0 +1,288 @@
+/* Index.html */
+/*Font Eskternal*/
+@font-face {
+    font-family:Montserrat;
+    src: url(Montserrat.otf);
+}
+/*Font Eskternal*/
+
+
+/* Navbar */
+body{
+    scroll-behavior: smooth;
+}
+/* Navbar */
+
+
+
+body{
+    background-color: #1b4a92;
+}
+
+.connav {
+    width: 100%;
+    height: 8%;
+    border: 0px solid black;
+    background-color: rgb(242, 231, 231);
+    margin: 0;
+    padding: 2px;
+    position: fixed;
+    z-index: 10000000;
+}
+
+.hmiflogo1 {
+    width: 5%;
+    height: auto;
+    position: fixed;
+    left: 10%;
+    top: 2%;
+    z-index: 100;
+}
+
+.navtext {
+    font-family: Montserrat;    
+    font-size: 70%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 2.4%;
+    left: 45.5%;
+    z-index: 100;
+}
+
+.navtext a, .navtext .dropdown h2 {
+    margin-right: 30px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-bottom: none;
+    cursor: pointer;
+}
+
+.navtext .dropdown h2 {
+    display: inline-block;
+    margin: 0; 
+}
+
+.thome, .tevent, .talumni {
+    display: inline-block;
+    margin: 0; 
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Navbar */
+
+
+
+/*content*/
+
+.navcontent{
+    overflow-x:hidden;
+}
+
+.overlay{
+    position: absolute; 
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+     width: 100%;
+     height: 100%;
+     z-index: 1;
+     opacity: 20%;
+ }
+
+.btext1{
+    font-size: 500%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family:Montserrat;
+    margin-bottom:5px ;
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    z-index: 1000;
+}
+
+.btext2{
+    width: 20%;
+    height: 5%;
+    border:0px  solid #1b4a92;
+    background: rgba(0, 166, 255, 0);
+    background: linear-gradient(90deg, rgba(0,164,255,1) 2%, rgba(2,183,180,1) 37%, rgba(3,187,163,1) 57%, rgba(5,9,130,1) 100%);
+
+
+    font-family:Montserrat;
+    font-size: 150%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding-top:2px ;
+    position: absolute;
+    top: 52%;
+    left: 38.5%;
+    z-index: 10;
+}
+
+
+.hmiflogo2{
+    width: 8%;
+    height: auto;
+    position: absolute;
+    left: 44.3%;
+    top: 23%;
+    z-index: 90;
+
+
+}
+
+.connav{
+    overflow-x:hidden;
+}
+
+.decor1{
+    position:relative;
+    
+    
+    
+}
+
+ 
+.DG1{
+
+  transform: translateY(-20.2%)  translateX(140%);
+  z-index: 10;
+}
+
+.DG2{
+   position: absolute;
+    transform:  translateY(43.2%)  translateX(-110%) ;
+    clip-path: inset(0 0 30% 0);
+    z-index:10;
+}
+
+
+    /* Running Text */
+    .marquee {
+        position: fixed;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        top: 95%;
+        font-family: montserrat;
+        background-color: #ffffff;
+        color: #000000;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .marquee-content {
+        display: inline-block;
+        white-space: nowrap;
+        padding-right: 100%; /* Jarak antar teks */
+        animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0%);
+        }
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+   
+
+/* Running Text */
+
+/*content*/
+
+/* About US*/
+
+
+.overlay2{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    border: 0px solid rgb(0, 0, 0);
+    background-color: #7096D1 (0, 0, 0, 0.964);
+    z-index: 10;
+
+
+}
+
+/* wave*/
+
+.custom-shape-divider-bottom-1719714510 {
+    position: absolute;
+    top: 190.5%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 10;
+}
+
+.custom-shape-divider-bottom-1719714510 svg {
+    position: relative;
+    display: block;
+    width: calc(102% + 1.3px);
+    height: 107px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1719714510 .shape-fill {
+    fill: #ffffff;
+   }
+
+/* wave*/
+
+
+/* About US*/
+
+
+.about1{
+    position: absolute;
+    z-index: 12;
+    margin-top: 5%;
+}
+
+
+
+
+/* About US*/
+
+/* Index.html */
